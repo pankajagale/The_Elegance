@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .banner {
+            position: relative;
+            background: url('banq1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: rgb(16, 1, 1);
+        }
+
+        h1 {
+            font-family: Lucida Handwriting;
+            color: rgb(246, 246, 248);
+            font-weight: bold;
+            font-size: 80px;
+        }
+        h2 {
+            font-family: cursive;
+            color: rgb(1, 1, 11);
+            font-weight: bold;
+        }
+        h3 {
+            font-family: cursive;
+            color: rgb(246, 246, 248);
+            font-weight: bold;
+            font-size: 50px;
+        }
+        h4 {
+            font-family: Papyrus;
+            color: rgb(246, 246, 248);
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 24px;
+            color: rgb(0, 0, 7);
+            margin-bottom: 40px;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            color: rgb(255, 252, 252);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .navbar a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        #myCarousel {
+            margin-top: 50px;
+        }
+
+        .carousel-inner .item img {
+            height: 500px;
+            width: 100%;
+            margin: auto;
+        }
+
+        .container-fluid.text-center.bg-grey {
+            padding: 50px 0;
+        }
+
+        .thumbnail {
+            padding: 0;
+            border: none;
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a class="active" href="#">Home</a>
+        <a href="./Rooms.html">Rooms</a>
+        <a href="./dining.html">Dining</a>
+        <a href="./contact.html">Contact</a>
+    </div>
+
+    <div class="banner">
+        <div class="overlay">
+            <h1>THE ELEGANCE</h1>
+            <h3>Welcome to Our Hotel</h3>
+            <h4>Your perfect destination for a comfortable stay.</h4>
+            <form>
+                <label for="check-in">Check-in:</label>
+                <input type="date" id="check-in">
+
+                <label for="check-out">Check-out:</label>
+                <input type="date" id="check-out">
+
+                <label for="guests">Guests:</label>
+                <input type="number" id="guests" min="1" max="10">
+
+                <input type="submit" value="Book Now">
+            </form>
+        </div>
+    </div>
+
+    <h2>VIEW OF OUR LUXURIOUS HOTELS WORLD-WIDE: </h2>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+            <li data-target="#myCarousel" data-slide-to="6"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="PRINCE9.jpg" alt="We Provide Quality Services">
+            </div>
+
+            <div class="item">
+                <img src="PRINCE5.jpg" alt="">
+            </div>
+
+            <div class="item">
+                <img src="PRINCE11.jpg" alt="">
+            </div>
+
+            <div class="item">
+                <img src="PRINCE6.jpg" alt="">
+            </div>
+
+            <div class="item">
+                <img src="PRINCE7.jpg" alt="">
+            </div>
+
+            <div class="item">
+                <img src="PRINCE8.jpg" alt="">
+            </div>
+
+            <div class="item">
+                <img src="PRINCE10.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="container-fluid text-center bg-grey">
+        <h2>HOTEL "THE ELEGANCE" AT GLOBAL LEVEL</h2>
+        <div class="row text-center">
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src="food2.png" alt="Food">
+                    <p><strong>FOOD</strong></p>
+                    <p>EXQUISITE,GOURMET CUISINE</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src="BANQ3.jpg" alt="Banquet">
+                    <p><strong>BANQUET</strong></p>
+                    <p>EXPERIENCE THE EYEWARMING AMBIENCE</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src="PRINCE3.jpeg" alt="Stay">
+                    <p><strong>STAY</strong></p>
+                    <p>LAVISH STAYS WITH WORLD-CLASS AMENITIES & EXPERIENCES</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <footer>
+        <div class="container-fluid text-center">
+            <p><b style="color: blue;">Designed and Developed by PANKAJ AGALE</b></p>
+        </div>
+    </footer>
+</body>
+</html>
+
